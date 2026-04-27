@@ -7,7 +7,7 @@
 
 ## Why this exists
 
-Nearly **50% of startups in the latest Y Combinator batch are building agentic AI products** ([PitchBook](https://pitchbook.com/news/articles/y-combinator-is-going-all-in-on-ai-agents-making-up-nearly-50-of-latest-batch)). A significant share of those are automating the kind of task that every restaurant, clinic, or service business faces every day: handling booking confirmations, cancellations, and modifications through a conversational interface.
+Nearly **50% of startups in the latest Y Combinator batch are building agentic AI products** ([PitchBook]([https://pitchbook.com/news/articles/y-combinator-is-going-all-in-on-ai-agents-making-up-nearly-50-of-latest-batch](https://pitchbook.com/news/articles/y-combinator-is-going-all-in-on-ai-agents-making-up-nearly-50-of-latest-batch#:~:text=Y%20Combinator%20is%20going%20all,50%25%20of%20latest%20batch%20%2D%20PitchBook))). A significant share of those are automating the kind of task that every restaurant, clinic, or service business faces every day: handling booking confirmations, cancellations, and modifications through a conversational interface.
 
 These workloads have a distinctive traffic pattern. Requests do not arrive at a steady rate. They arrive in bursts — concentrated in the hour before lunch, before dinner, on Friday afternoons. Outside those windows, traffic drops to near zero. This burst-and-idle shape is precisely the scenario that serverless architectures were designed for.
 
