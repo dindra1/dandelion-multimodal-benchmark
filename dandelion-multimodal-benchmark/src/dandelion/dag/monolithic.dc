@@ -1,0 +1,4 @@
+function mono_all (request) => (result);
+composition mono_pipeline (req) => (out) {
+    mono_all (request = all req) => (out = result);
+}

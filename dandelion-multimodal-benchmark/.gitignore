@@ -1,0 +1,15 @@
+build/
+*.o
+*.a
+*.so
+*.dylib
+models/*.bin
+models/*.onnx
+datasets/audio/*.wav
+datasets/audio/*.mp3
+datasets/images/*.png
+third_party/onnxruntime-win-x64-1.17.3/
+__pycache__/
+.env
+*.egg-info/
+dist/

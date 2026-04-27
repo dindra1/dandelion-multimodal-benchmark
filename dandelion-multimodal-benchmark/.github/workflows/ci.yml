@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            cmake ninja-build \
+            libtesseract-dev libleptonica-dev \
+            python3-pip
+
+      - name: Install ONNX Runtime
+        run: |
+          ORT_VERSION=1.17.3
+          wget -q https://github.com/microsoft/onnxruntime/releases/download/v${ORT_VERSION}/onnxruntime-linux-x64-${ORT_VERSION}.tgz
+          tar xf onnxruntime-linux-x64-${ORT_VERSION}.tgz
+          echo "ONNXRUNTIME_DIR=$PWD/onnxruntime-linux-x64-${ORT_VERSION}" >> $GITHUB_ENV
+
+      - name: Configure CMake
+        run: |
+          cmake -B build -G Ninja \
+            -DCMAKE_BUILD_TYPE=RelWithDebInfo \
+            -DONNXRUNTIME_DIR=$ONNXRUNTIME_DIR
+
+      - name: Build all targets
+        run: cmake --build build --parallel
+
+      - name: Smoke test stubs
+        run: |
+          ./build/monolith_pipeline 2>&1 | grep -q "stub" && echo "monolith stub OK"
+          ./build/dandelion_stub 2>&1 | grep -q "stub" && echo "dandelion stub OK"
+          ./build/lambda_stub 2>&1 | grep -q "stub" && echo "lambda stub OK"
+
+      - name: Python model conversion check
+        run: |
+          pip install torch transformers --quiet
+          python scripts/model_conversion/convert_to_onnx.py --output /tmp/test_export.onnx
+          pip install onnx --quiet
+          python -c "import onnx; onnx.checker.check_model('/tmp/test_export.onnx'); print('ONNX check passed')"

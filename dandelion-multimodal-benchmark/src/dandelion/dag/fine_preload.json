@@ -1,0 +1,44 @@
+[
+  {
+    "name": "ingress",
+    "engineType": "Process",
+    "ctxSize": 33554432,
+    "binaryPath": "/mnt/d/desktop_shortcut/Martin/1 polimi/dandelion/dandelion-multimodal-benchmark/build/dandelion_elfs/ingress.elf",
+    "metadata": { "inputSets": ["request"], "outputSets": ["text_data", "audio_data", "image_data"] }
+  },
+  {
+    "name": "normalize",
+    "engineType": "Process",
+    "ctxSize": 33554432,
+    "binaryPath": "/mnt/d/desktop_shortcut/Martin/1 polimi/dandelion/dandelion-multimodal-benchmark/build/dandelion_elfs/normalize.elf",
+    "metadata": { "inputSets": ["raw_text"], "outputSets": ["normalized"] }
+  },
+  {
+    "name": "classify",
+    "engineType": "Process",
+    "ctxSize": 33554432,
+    "binaryPath": "/mnt/d/desktop_shortcut/Martin/1 polimi/dandelion/dandelion-multimodal-benchmark/build/dandelion_elfs/classify.elf",
+    "metadata": { "inputSets": ["text_in"], "outputSets": ["result"] }
+  },
+  {
+    "name": "format_output",
+    "engineType": "Process",
+    "ctxSize": 33554432,
+    "binaryPath": "/mnt/d/desktop_shortcut/Martin/1 polimi/dandelion/dandelion-multimodal-benchmark/build/dandelion_elfs/format_output.elf",
+    "metadata": { "inputSets": ["result_in"], "outputSets": ["final_result"] }
+  },
+  {
+    "name": "coarse_text",
+    "engineType": "Process",
+    "ctxSize": 33554432,
+    "binaryPath": "/mnt/d/desktop_shortcut/Martin/1 polimi/dandelion/dandelion-multimodal-benchmark/build/dandelion_elfs/coarse_text.elf",
+    "metadata": { "inputSets": ["raw_text"], "outputSets": ["result"] }
+  },
+  {
+    "name": "mono_all",
+    "engineType": "Process",
+    "ctxSize": 33554432,
+    "binaryPath": "/mnt/d/desktop_shortcut/Martin/1 polimi/dandelion/dandelion-multimodal-benchmark/build/dandelion_elfs/mono_all.elf",
+    "metadata": { "inputSets": ["request"], "outputSets": ["result"] }
+  }
+]

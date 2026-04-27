@@ -1,0 +1,9 @@
+[
+  {
+    "name": "mono_all",
+    "engineType": "Process",
+    "ctxSize": 33554432,
+    "binaryPath": "/mnt/d/desktop_shortcut/Martin/1 polimi/dandelion/dandelion-multimodal-benchmark/build/dandelion_elfs/mono_all.elf",
+    "metadata": { "inputSets": ["request"], "outputSets": ["result"] }
+  }
+]

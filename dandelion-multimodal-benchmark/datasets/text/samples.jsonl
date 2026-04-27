@@ -1,0 +1,30 @@
+{"id": "t001", "input": "I'd like to book a table for two this Friday evening at 7pm", "label": "book_reservation"}
+{"id": "t002", "input": "Can I make a reservation for four people on Saturday night", "label": "book_reservation"}
+{"id": "t003", "input": "Please book me a table for six for my anniversary dinner next week", "label": "book_reservation"}
+{"id": "t004", "input": "I want to reserve a table for a birthday party of eight on Sunday", "label": "book_reservation"}
+{"id": "t005", "input": "Book a table for two at half past seven on Thursday please", "label": "book_reservation"}
+{"id": "t006", "input": "I need to book a private dining room for a business lunch on Monday", "label": "book_reservation"}
+{"id": "t007", "input": "Cancel my reservation for tomorrow night please", "label": "cancel_reservation"}
+{"id": "t008", "input": "I need to cancel my booking for Saturday the fifteenth", "label": "cancel_reservation"}
+{"id": "t009", "input": "Please cancel all my upcoming reservations at your restaurant", "label": "cancel_reservation"}
+{"id": "t010", "input": "I want to cancel my table reservation for this Sunday lunch", "label": "cancel_reservation"}
+{"id": "t011", "input": "Cancel my reservation, something came up and I cannot make it", "label": "cancel_reservation"}
+{"id": "t012", "input": "I need to cancel my booking for next Friday evening", "label": "cancel_reservation"}
+{"id": "t013", "input": "Can I change my reservation from Friday to Saturday at the same time", "label": "modify_reservation"}
+{"id": "t014", "input": "I need to move my booking from 7pm to 8pm on the same day", "label": "modify_reservation"}
+{"id": "t015", "input": "We need to add two more people to our reservation for tomorrow night", "label": "modify_reservation"}
+{"id": "t016", "input": "Can I change the date of my reservation from the 5th to the 7th", "label": "modify_reservation"}
+{"id": "t017", "input": "Please update my booking to a table for five instead of three", "label": "modify_reservation"}
+{"id": "t018", "input": "I want to modify my reservation to include a high chair for a toddler", "label": "modify_reservation"}
+{"id": "t019", "input": "Do you have any vegetarian options on your menu", "label": "ask_about_menu"}
+{"id": "t020", "input": "What gluten free dishes do you serve", "label": "ask_about_menu"}
+{"id": "t021", "input": "Can you tell me about your daily specials today", "label": "ask_about_menu"}
+{"id": "t022", "input": "Are there any vegan dishes available for dinner", "label": "ask_about_menu"}
+{"id": "t023", "input": "What is your most popular pasta dish on the menu", "label": "ask_about_menu"}
+{"id": "t024", "input": "Do you offer a kids menu or children's portions", "label": "ask_about_menu"}
+{"id": "t025", "input": "What time do you open tomorrow morning", "label": "unknown"}
+{"id": "t026", "input": "Is there parking available near the restaurant", "label": "unknown"}
+{"id": "t027", "input": "Do you have wheelchair accessible facilities", "label": "unknown"}
+{"id": "t028", "input": "What is the dress code for your restaurant", "label": "unknown"}
+{"id": "t029", "input": "Can I bring my own wine and is there a corkage fee", "label": "unknown"}
+{"id": "t030", "input": "Do you accept credit cards or is it cash only", "label": "unknown"}

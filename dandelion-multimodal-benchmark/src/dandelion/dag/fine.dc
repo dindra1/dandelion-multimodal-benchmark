@@ -1,0 +1,8 @@
+function ingress (request) => (text_data, audio_data, image_data);
+function normalize (raw_text) => (normalized);
+function classify (text_in) => (result);
+composition fine_text (req) => (out) {
+    ingress (request = all req) => (text_out = text_data, audio_out = audio_data, img_out = image_data);
+    normalize (raw_text = all text_out) => (norm_out = normalized);
+    classify (text_in = all norm_out) => (out = result);
+}

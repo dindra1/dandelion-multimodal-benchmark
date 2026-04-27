@@ -1,0 +1,15 @@
+LIBRARY libtesseract-5
+EXPORTS
+    TessBaseAPICreate
+    TessBaseAPIDelete
+    TessBaseAPIClear
+    TessBaseAPIEnd
+    TessBaseAPIInit3
+    TessBaseAPISetImage
+    TessBaseAPISetImage2
+    TessBaseAPIGetUTF8Text
+    TessDeleteText
+    TessDeleteTextArray
+    TessBaseAPISetPageSegMode
+    TessBaseAPIGetHOCRText
+    TessBaseAPISetVariable
