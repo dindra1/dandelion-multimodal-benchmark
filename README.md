@@ -195,4 +195,4 @@ The classification is intentionally simple (keyword matching after normalization
 
 - ETH EASL Dandelion runtime: https://github.com/eth-easl/dandelion
 - ETH EASL DandelionSDK: https://github.com/eth-easl/dandelionSDK
-- Y Combinator agentic AI batch (PitchBook, 2024): https://pitchbook.com/news/articles/y-combinator-is-going-all-in-on-ai-agents-making-up-nearly-50-of-latest-batch
+- Y Combinator agentic AI batch (PitchBook, 2025): https://pitchbook.com/news/articles/y-combinator-is-going-all-in-on-ai-agents-making-up-nearly-50-of-latest-batch
